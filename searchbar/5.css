@@ -1,0 +1,26 @@
+.input{
+    text-align: left;
+    font-size: large;
+    margin-left: 15px;
+    outline: none;
+    border: 5px;
+    background: hsl(0, 0%, 89%);
+
+}
+.input:hover{
+    background: hsl(0, 0%, 95%);
+}
+.search{
+    width: max-content;
+    display: flex;
+    padding: 15px;
+    border-radius: 25px;
+    background: hsl(0, 0%, 89%);
+    transition: box-shadow 0.5s;
+}
+.search:focus-within{
+    box-shadow: 5px 10px black;
+}
+.material-symbols-outlined{
+    color: hsl(0, 0%, 65%); ;
+}

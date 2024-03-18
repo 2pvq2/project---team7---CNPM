@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Giới Thiệu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #a90a0a;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>nhóm 7 kĩ thuật lập trinh</h1>
+        <img smc="a.jpg" alt="">
+        <p><strong>Tên:</strong> Phan Văn Đạt</p>
+        <p><strong>Ngày sinh:</strong> 08/08/2002</p>
+        <p><strong>Nơi sống:</strong> thái bình/việt nam/ trái đất</p>
+        <p><strong>Email:</strong> dat882002np@gmail.com</p>
+        <p><strong>Số điện thoại:</strong>0926385154</p>
+        <p><strong>Sở thích:</strong> chơi cờ và ngủ</p>
+    </div>
+</body>
+</html>

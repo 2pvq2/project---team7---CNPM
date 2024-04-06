@@ -1,0 +1,32 @@
+.dropbox{
+    display: inline-block;
+}
+.dropbox button{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropbox a{
+    display: block;
+    color: hsl(84, 100%, 59%);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropbox .dulieu{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 59%, 41%);
+    min-width: none;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropbox:hover .dulieu{
+    display: block;
+}
+.dropbox:hover button{
+    background-color: hsl(0, 0%, 20%);
+}
+.dropbox a:hover{
+    background-color: hsl(0, 59%, 61%);
+}

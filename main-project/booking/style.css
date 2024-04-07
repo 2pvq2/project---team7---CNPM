@@ -67,7 +67,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(img.jpg) no-repeat;
+    background: url(./assets/img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -235,18 +235,18 @@ body{
     z-index: 1;
 }
 .booking.active-booking {
-    display: flex; /* Hoặc style khác để hiển thị phần tử */
-    opacity: 1; /* Phần tử sẽ đạt độ trong suốt đầy đủ và hoàn toàn hiển thị */
+    display: flex; 
+    opacity: 1; 
     transform: translateX(0);  
     z-index: 1;
   }
 
 .booking{
-    transform: translateX(50%); /* Di chuyển phần tử sang trái thành -50% so với vị trí ban đầu của nó */
+    transform: translateX(50%);
     transition: transform 0.2s ease, opacity 0.2s ease;
     position: fixed;
     height: 500px;
-    width: 50%; /* hoặc bất kỳ giá trị nào bạn muốn */
+    width: 40%; 
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -257,9 +257,9 @@ body{
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     border-radius: 12%;
     display: flex;
-    flex-direction: column; /* Sắp xếp các thẻ select theo chiều dọc */
-    justify-content: center; /* Căn giữa theo chiều dọc */
-    align-items: center; /* Căn giữa theo chiều ngang */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     opacity: 0;
     z-index: 0;
 }
@@ -273,7 +273,7 @@ select{
     background-color: transparent;
     color: beige;
     border: 1px solid #ddddddcc; 
-    border-radius: 4px; 
+
     padding: 10px; 
     font-size: 16px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
@@ -293,12 +293,12 @@ option{
 }
 
 select:focus{
-    border-color: black; /* Đổi màu viền khi thẻ được focus */
+    border-color: black; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .intro.active-intro {
-    opacity: 1; /* Phần tử sẽ đạt độ trong suốt đầy đủ và hoàn toàn hiển thị */
+    opacity: 1; 
     transform: translateX(0);  
     display: block;
     z-index: 0;
@@ -334,4 +334,56 @@ h4{
 .intro>a{
     text-decoration: none;
     color: rgb(255, 205, 205);
+}
+
+.dtn.active-dtn{
+    display: flex; 
+    opacity: 1; 
+    transform: translateX(0);  
+    z-index: 1;
+  }
+
+.dtn {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    z-index: 0;
+    transform: translateX(25%);
+    opacity: 0;
+    position: fixed;
+    width: 1500px;
+    height: 1500px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    margin: 0 auto;
+}
+
+.stadium {
+    width: 400px;
+    height: 420px;
+    margin: 0 10px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 20px rgb(7, 173, 195);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.stadium img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.stadium h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 200px; 
+    left: 0;
+    width: 100%; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); 
 }

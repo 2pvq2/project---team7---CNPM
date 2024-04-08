@@ -4,9 +4,13 @@ main h1{
 main p{
     color: bisque;
 }
-main {
-    display: flex;
+.trangchu {
+ 
     justify-content: space-between;
+    transform: translateX(-18%);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0;
+    z-index: 0;
 }
 .slider-container {
     width: 35%; 

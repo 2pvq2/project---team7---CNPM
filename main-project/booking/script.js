@@ -11,6 +11,7 @@ const fields = document.querySelector('.fields');
 const dtn = document.querySelector('.dtn');
 
 
+
 registerlink.addEventListener('click', ()=> {
     wrapper.classList.add('active');
     booking.classList.remove('active-booking');

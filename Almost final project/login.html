@@ -5,21 +5,121 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="style1.css">
         <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="1.css">
         <link rel="icon" type="png" href="icon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
+
+
         <header>
             <h2 class="logo">Đặt sân siêu tốc</h2>
             <nav class="navigation">
-                <a href="#home">Trang chủ</a></li>
-                <a href="#booking">Đặt sân</a></li>
-                <a href="#fields">Sân</a></li>
-                <a href="#guide">Hướng dẫn</a> </li>
-                <a href="contact.html">Góp ý</a>
+                <a  class="home"href="#home">Trang chủ</a></li > 
+                <a  class="guide"href="#guide">Giới thiệu</a> </li>  
+                <a  class="bookings"href="#booking">Đặt sân</a></li>   
+                <a class="fields" href="#fields">Sân</a></li>   
+                <a class="contribute" href="#">Góp ý</a>
                 <button class="popup">Đăng nhập</button>
             </nav>
         </header>
+        
+<!-- ---------------------------------------------- -->
+
+
+        <div class="intro">
+            <h4>SoccerSpot Booking</h4>
+            <p>Welcome to <a href="#">SoccerSpot Booking</a>, our team's project ,a convenient platform to help you organize your soccer matches effortlessly. Here, you can book soccer fields, check for available slots, and make payments quickly and conveniently. With a user-friendly interface and flexible features, booking fields has never been easier. Simply select the field, choose your preferred time slot, and confirm your booking - all within minutes. The feature to check for available fields helps you easily find a field that suits your schedule. Moreover, our secure and safe payment system ensures that you complete transactions with peace of mind. Explore <a href="#">SoccerSpot Booking</a> today and experience the convenience and time-saving benefits for every match you organize.</p>
+        </div>
+
+
+        <!-- ----------------------------------------------------- -->
+        <div class="booking">
+
+        
+            <select name="name" id="stadium">
+                <option value="choose">--Chọn sân thi đấu--</option>
+                <option value="san1">Old Trafford</option>
+                <option value="san2">Santiago Bernabéu</option>
+                <option value="san3">Camp Nou</option>
+                <option value="audi">Stamford Bridge</option>
+            </select>
+      
+
+         
+            <select name="name" id="time">
+                <option value="choose">--Chọn khung giờ thi đấu--</option>
+                <option value="san1">6:30.am</option>
+                <option value="san2">9:00.am</option>
+                <option value="san3">11:30.am</option>
+                <option value="audi">1:30.pm</option>
+                <option value="audi">3:00.pm</option>
+                <option value="audi">5:30.pm</option>
+                <option value="audi">8:00.pm</option>
+                <option value="audi">10:30.pm</option>
+            </select>
+      
+
+            <select name="name" id="stadium">
+                <option value="choose">--Chọn trọng tài chính--</option>
+                <option value="san1">Felix Brych</option>
+                <option value="san2">Orsato</option>
+                <option value="san3">Howard Webb</option>
+                <option value="audi">Markus Merk</option>
+                <option value="audi"> Pierluigi Collina</option>
+                <option value="audi"> Không cần</option>
+            </select>
+
+            <select name="name" id="stadium">
+                <option value="choose">--Chọn nước điện giải--</option>
+                <option value="san1">Tiger</option>
+                <option value="san2">Habeco</option>
+                <option value="san3">Corona </option>
+                <option value="audi">Heineken</option>
+                <option value="audi">Trúc Bạch</option>
+            </select>
+        </div>
+        
+        <!-- ----------------------------------------------------- -->
+        
+
+        <div class="intro">
+            <h4>SoccerSpot Booking</h4>
+            <p>Welcome to <a href="#">SoccerSpot Booking</a>, our team's project ,a convenient platform to help you organize your soccer matches effortlessly. Here, you can book soccer fields, check for available slots, and make payments quickly and conveniently. With a user-friendly interface and flexible features, booking fields has never been easier. Simply select the field, choose your preferred time slot, and confirm your booking - all within minutes. The feature to check for available fields helps you easily find a field that suits your schedule. Moreover, our secure and safe payment system ensures that you complete transactions with peace of mind. Explore <a href="#">SoccerSpot Booking</a> today and experience the convenience and time-saving benefits for every match you organize.</p>
+        </div>
+
+
+        <!-- ----------------------------------------------------- -->
+
+        <div class="dtn">
+            <div class="stadium">
+                <img src="assets/20-1.jpg" alt="">
+                <h1>Old Trafford</h1>
+                
+            </div>
+            <div class="stadium">
+                <img src="assets/2.jpg" alt="">
+                <h1>Santiago Bernabéu</h1>
+              
+            </div>
+            <div class="stadium">
+                <img src="assets/3.jpg" alt="">
+
+                <h1>Camp Nou</h1>
+                
+            </div>
+
+            <div class="stadium">
+                <img src="assets/3.jpeg" alt="">
+
+                <h1>Stamford Bridge</h1>
+               
+            </div>
+        </div>
+           
+
+        <!-- ----------------------------------------------------- -->
             <div class="wrapper">                    
                     <span class="close"><ion-icon name="close"></ion-icon></span>
                     <div class="form-login">
@@ -75,7 +175,9 @@
                     </div>
             </div>
     </body>
-    <main>
+
+    <!-- -----------------------------------------------------  -->
+    <main class="trangchu">
         <section>
             <h1>Một số sân có sẵn</h1>
             <div class="slider-container">
@@ -132,6 +234,22 @@
         </div>
         </article>
     </main>
+    <!-- ---------------------------------------------- -->
+
+    <div class="gopy">
+        <h1>Hòm góp ý</h1>
+        <form action="#" method="post">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Gửi">
+        </form>
+    </div>
+
+    <!-- ------------------------------------------------ -->
     <footer>
         <ul class="list">
             <li><a href="Facebook.com"><i class="fa fa-facebook-official" aria-hidden="true" style="color: rgb(63, 63, 255);"></i>Facebook</a></li>
@@ -142,8 +260,10 @@
         <p>&copy; 2024 Bản quyền thuộc về Đặt Sân Siêu tốc</p>
         </div>
     </footer>
+
+<!-- ---------------------------------------------------------    -->
     <script src="script.js"></script>
-    <script src="script1.js"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>

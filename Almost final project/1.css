@@ -1,20 +1,32 @@
 
-* {
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
 }
-.container {
+
+.gopy.active-gopy{
+    opacity: 1; 
+    transform: translateX(0);  
+    position: fixed;
+    z-index: 1;
+}
+.gopy {
+    position: fixed;
+    top: 25%;
+    opacity: 0;
+    z-index: 0;
     max-width: 600px;
-    margin: 50px auto;
+    margin: 50px ;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    box-shadow: 0 0 50px rgba(25, 0, 0, 0.1);
+    transform: translateX(-50%);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+   z-index: 0;
 }
 h1 {
     text-align: center;
@@ -54,13 +66,4 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
     background-color: #0056b3;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(img.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
 }

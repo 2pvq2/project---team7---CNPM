@@ -1,0 +1,42 @@
+main h1{
+    color: bisque;
+}
+main p{
+    color: bisque;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-container {
+    width: 35%; 
+    overflow: hidden;
+    padding: 10px;
+    display: inline-block; 
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+.slider:hover {
+    animation: slide 3s infinite;
+}
+  
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+.desc {
+    margin-top: 10px;
+}
+.slider:hover img {
+    transform: scale(1.2);
+  }
